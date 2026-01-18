@@ -24,10 +24,10 @@ export default function StreamViewers() {
         // 1. Fetch immediately on mount
         fetchData()
 
-        // 2. Set up interval to fetch every 15 seconds
+        // 2. Set up interval to fetch every 5 seconds
         const interval = setInterval(() => {
             fetchData()
-        }, 15000)
+        }, 5000)
 
         // 3. Cleanup on unmount
         return () => clearInterval(interval)

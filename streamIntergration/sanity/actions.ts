@@ -24,7 +24,7 @@ export interface ViewerData {
 export async function getFreshViewers() {
     // 1. Calculate the threshold on the server
     const date = new Date()
-    date.setMinutes(date.getMinutes() - 1) // 1 minute ago
+    date.setMinutes(date.getMinutes() - 0.2) // 0.2 minute ago
     const threshold = date.toISOString()
 
     // 2. Query Sanity
